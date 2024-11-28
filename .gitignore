@@ -1,0 +1,42 @@
+# Ignore all .metadata folders at any level
+**/.metadata/
+.metadata
+
+# Other ignores
+*.log
+*.tmp
+
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Java build output
+/bin/
+target/
+
+# Eclipse IDE specific files
+.metadata/
+.apt_generated/
+.classpath
+.project
+.settings/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Eclipse specific
+*.tmp
+*.bak
+*.swp
+
+# Other unnecessary files
+*.log
+*.tmp
+*.bak
+*.swp
