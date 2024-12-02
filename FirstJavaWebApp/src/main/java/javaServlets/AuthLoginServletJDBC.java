@@ -23,6 +23,7 @@ public class AuthLoginServletJDBC extends HttpServlet {
 	@Override
 	public void init(ServletConfig config) throws ServletException {
 		super.init(config);
+		System.out.println("in init of auth with db");
 
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -58,6 +59,7 @@ public class AuthLoginServletJDBC extends HttpServlet {
 		// extract params
 		String uid = request.getParameter("uid");
 		String pwd = request.getParameter("pwd");
+		System.out.println(uid+" : "+pwd);
 
 		if (uid.length() > 0 && pwd.length() > 0) {
 			PreparedStatement ps = null;
@@ -98,9 +100,6 @@ public class AuthLoginServletJDBC extends HttpServlet {
 		} else {
 			response.sendRedirect("/FirstJavaWebApp/login.html");
 		}
-
-		// create statment and exec query
-
 	}
 
 }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+<style type="text/css">
+	form{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+		text-align: start;
+		width: 500px;
+	}
+</style>
+</head>
+<body>
+	<h1>Welcome to Register</h1>
+	<form action="http://localhost:8080/shoppingApp/register"
+		method="post">
+		First Name: <input type="text" placeholder="Enter your first name" name="fname" required /> 
+		Last Name: <input type="text" placeholder="Enter your Last name" name="lname" required /> 
+		Email: <input type="email" placeholder="Enter your email" name="email" required/> 
+		Contact number: <input type="number" placeholder="Enter your contant number" name="contact" required/> 
+		User ID: <input type="text" placeholder="User id" name="uid" required /> 
+		Password : <input type="password" placeholder="Password" name="pwd" required/>
+		<input type="submit" value="LOGOIN" />
+	</form>
+		<p>Already have account ? <a href="">LOGIN</a> </p>	
+</body>
+</html>
